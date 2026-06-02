@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ignis · benchmark reports</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --fg: #c9d1d9;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --border: #21262d;
+    --row: #161b22;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.5;
+  }
+  main { max-width: 920px; margin: 0 auto; }
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  tr:nth-child(even) { background: var(--row); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .score { font-weight: 600; }
+  .pass { color: #3fb950; }
+  .mid  { color: #d29922; }
+  .low  { color: #f85149; }
+  code {
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.85em;
+    background: var(--row);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+  }
+  footer {
+    margin-top: 3rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>ignis &middot; benchmark reports</h1>
+  <p class="sub">
+    Per-run HTML reports for <a href="https://github.com/Fullstop000/ignis">ignis</a>
+    against agent benchmarks. The canonical history table lives in the
+    <a href="https://github.com/Fullstop000/ignis/blob/master/benchmarks/RESULTS.md">main repo's RESULTS.md</a>;
+    each row links here for the per-trial drill-in.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Benchmark</th>
+        <th>Model</th>
+        <th class="num">Score</th>
+        <th>Report</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2026-06-02</td>
+        <td>Terminal-Bench 2.1</td>
+        <td><code>minimax-token-plan/MiniMax-M3</code></td>
+        <td class="num score mid">42 / 89 &middot; 47.2 %</td>
+        <td><a href="reports/tb21-minimax-m3-20260602.html">html</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    Reports are static HTML rendered from each harbor job dir via
+    <code>scripts/generate_report.py</code> in the main repo. Source CSVs are
+    committed under
+    <a href="https://github.com/Fullstop000/ignis/tree/master/benchmarks/terminal-bench/history">
+      benchmarks/terminal-bench/history/</a>.
+  </footer>
+</main>
+</body>
+</html>
