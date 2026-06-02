@@ -16,7 +16,6 @@ h3 { margin: 1.5rem 0 0.5rem; font-size: 0.95rem; color: #444; }
 .bar .passed  { background: #2e8b57; }
 .bar .failed  { background: #c66; }
 .bar .errored { background: #d99650; }
-.bar .quota   { background: #888; }
 table { width: 100%; border-collapse: collapse; background: white; border-radius: 4px; overflow: hidden; border: 1px solid #e6e6e6; font-size: 13px; }
 th, td { padding: 0.4rem 0.6rem; text-align: left; border-bottom: 1px solid #efefef; }
 th { background: #f4f4f4; cursor: pointer; user-select: none; white-space: nowrap; }
@@ -25,12 +24,10 @@ th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
 tr.passed { background: #f0f9f3; }
 tr.failed { background: #fdf3f3; }
 tr.errored { background: #fef6ec; }
-tr.quota { background: #f4f4f4; color: #777; }
 .bucket-tag { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 0.7rem; font-weight: 600; color: white; }
 .bucket-passed  { background: #2e8b57; }
 .bucket-failed  { background: #c66; }
 .bucket-errored { background: #d99650; }
-.bucket-quota   { background: #888; }
 details { background: #fafbfc; border-top: 1px solid #efefef; padding: 0.5rem 1rem; }
 details summary { cursor: pointer; color: #4a90d9; font-size: 0.85rem; }
 details[open] summary { font-weight: 600; }
@@ -43,7 +40,7 @@ pre { font-family: "SF Mono", Consolas, monospace; font-size: 11px; background: 
 .tool-bar .bar-fill  { height: 100%; background: #4a90d9; }
 </style></head><body>
 <h1>ignis · Terminal-Bench 2.1 report</h1>
-<div class="meta">job dir: <code>runs/minimax-token-plan-MiniMax-M3-daytona-20260602-023102/ignis-minimax-m3-tb21-v3-openai</code> · generated 2026-06-02T16:17:09</div>
+<div class="meta">job dir: <code>runs/minimax-token-plan-MiniMax-M3-daytona-20260602-023102/ignis-minimax-m3-tb21-v3-openai</code> · generated 2026-06-02T17:22:24</div>
 
 <div class="stats">
   <div class="stat"><div class="label">Real-attempt pass rate</div><div class="value">47.2%</div><div class="meta">42 / 89 real trials</div></div>
@@ -3186,7 +3183,7 @@ All requirements have been met:
   <td class="num" data-sort="95837">95,837</td>
   <td class="num" data-sort="0.6180508096598062">61.8%</td>
   <td class="num" data-sort="41">41</td>
-  <td>AgentTimeoutError</td>
+  <td>—</td>
 </tr>
 <tr class="passed"><td colspan="9" style="padding:0"><details>
   <summary>drill-down · 41 tool calls · verifier reward 1 · agent log 305,114 bytes</summary>
@@ -32386,7 +32383,7 @@ python3 /tmp/test_leave_post.py 2&gt;&amp;1 | tail -20]&lt;]minimax[&gt;[&lt;/co
   <td class="num" data-sort="5116">5,116</td>
   <td class="num" data-sort="0.7918053828566844">79.2%</td>
   <td class="num" data-sort="34">34</td>
-  <td>AgentTimeoutError</td>
+  <td>—</td>
 </tr>
 <tr class="passed"><td colspan="9" style="padding:0"><details>
   <summary>drill-down · 34 tool calls · verifier reward 1 · agent log 38,438 bytes</summary>
@@ -33135,7 +33132,7 @@ Done. Summary:
   <td class="num" data-sort="12670">12,670</td>
   <td class="num" data-sort="0.6005897274678577">60.1%</td>
   <td class="num" data-sort="10">10</td>
-  <td>AgentTimeoutError</td>
+  <td>—</td>
 </tr>
 <tr class="passed"><td colspan="9" style="padding:0"><details>
   <summary>drill-down · 10 tool calls · verifier reward 1 · agent log 41,009 bytes</summary>
@@ -33792,7 +33789,7 @@ Qed.
   <td class="num" data-sort="0">—</td>
   <td class="num" data-sort="0">—</td>
   <td class="num" data-sort="51">51</td>
-  <td>AgentTimeoutError</td>
+  <td>—</td>
 </tr>
 <tr class="passed"><td colspan="9" style="padding:0"><details>
   <summary>drill-down · 51 tool calls · verifier reward 1 · agent log 214,686 bytes</summary>
