@@ -40,7 +40,7 @@ pre { font-family: "SF Mono", Consolas, monospace; font-size: 11px; background: 
 .tool-bar .bar-fill  { height: 100%; background: #4a90d9; }
 </style></head><body>
 <h1>ignis · Terminal-Bench 2.1 report</h1>
-<div class="meta">job dir: <code>/home/zht/ignis/.claude/worktrees/tb2-adapter/benchmarks/terminal-bench/runs/minimax-token-plan-MiniMax-M3-daytona-20260602-195807/ignis-minimax-m3-tb21-v033</code> · generated 2026-06-03T10:27:13</div>
+<div class="meta">generated 2026-06-03T11:33:06</div>
 
 <div class="stats">
   <div class="stat"><div class="label">Real-attempt pass rate</div><div class="value">51.7%</div><div class="meta">46 / 89 real trials</div></div>
@@ -66,7 +66,7 @@ pre { font-family: "SF Mono", Consolas, monospace; font-size: 11px; background: 
     <th onclick="sortTable(this)" class="num">Tool calls</th>
     <th onclick="sortTable(this)">Exception</th>
   </tr></thead>
-  <tbody><tr class="passed">
+  <tbody><tr class="passed" >
   <td>make-mips-interpreter</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -10098,7 +10098,7 @@ OK I&#x27;m done. The implementation is correct and the test should pass.
 OK let me also do a final test to make sure everything works.
 
 Actually, I already</pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>compile-compcert</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -13191,7 +13191,7 @@ CompCert 3.13.1 has been built from source at /tmp/CompCert/ and is fully functi
 - `/tmp/CompCert/share/compcert.ini` — configuration
 - `/tmp/CompCert/share/man/man1/ccomp.1` — man page
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>path-tracing-reverse</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -21309,7 +21309,7 @@ The program is a raytracer that:
 - Ground color: (base·lit, base·lit, base·lit) where base ∈ {0.9, 0.4} by checker
 - Sky color: (1−0.5t, 1−0.3t, 1) where t = 0.5·(dir.y + 1)
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>feal-differential-cryptanalysis</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -27325,7 +27325,7 @@ The attack is complete and reliable. Here&#x27;s a summary of what I did:
 
 **Verification**: Tested on 50 random keys — 100% success rate, average ~0.15s per attack (well under 30s).
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>caffe-cifar-10</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -29243,7 +29243,7 @@ All requirements satisfied. Summary:
 - `/app/caffe/examples/cifar10/cifar10_quick_iter_500.caffemodel` — 583 KB snapshot at iteration 500
 - `/app/caffe/examples/cifar10/cifar10_quick_solver.prototxt` — solver configuration
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>fix-ocaml-gc</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -37622,7 +37622,7 @@ The modified code consistently used `wsize_sizeclass[sz]` where it needed the sl
 
 The bootstrap completes cleanly and all 40 tests in `testsuite/tests/basic` pass.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>sam-cell-seg</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -41678,7 +41678,7 @@ The script `/app/convert_masks.py`:
 - Converts each final binary mask to a closed polyline via `cv2.findContours` (external contour, all points, with the first point duplicated at the end to close the loop)
 - Recomputes `xmin/xmax/ymin/ymax` from the polyline and writes the new CSV, preserving all other input columns
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>mteb-leaderboard</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -43447,7 +43447,7 @@ Top results as of August 2025 (with all 28 tasks):
 
 Newer models like `codefuse-ai/F2LLM-v2-*` (71.01+) and `Salesforce/SFR-Embedding-2_R` (64.73) are excluded because their Scandinavian results were added to the repo in 2026, after August 2025.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>large-scale-text-editing</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -48804,7 +48804,7 @@ The grep check had a regex issue (didn&#x27;t account for the `%` prefix) - but 
 - ✅ Transforms `  alpha1  ,    BeTa1   ,  GaMmA1  ` → `GAMMA1;BETA1;ALPHA1;OK`
 - ✅ Robust to varying internal whitespace patterns
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>largest-eigenval</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -55436,7 +55436,7 @@ But the complex RQI is complex to implement. Let me see if I can simplify.
 ### Simplified complex RQI
 
 For the complex RQI, I need</pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>qemu-alpine-ssh</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -57451,7 +57451,7 @@ ssh -p 2222 root@localhost
 # password: password123
 ```
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>qemu-startup</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -60955,7 +60955,7 @@ telnet 127.0.0.1 6665
 ```
 and you&#x27;ll see the Alpine `localhost login:` prompt. The default Alpine live user is `root` (no password).
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>custom-memory-heap-crash</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -66143,7 +66143,7 @@ Verification:
 - **Debug**: still exit 0, unchanged behavior (75,088 still-reachable)
 - Only `/app/user.cpp` was modified
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>sqlite-db-truncate</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -66967,7 +66967,7 @@ Recovered all 10 rows from the single SQLite page. The file is a 4096-byte leaf 
 | testword08 | 99.99 |
 | testword09 | 0.5 |
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>merge-diff-arc-agi-task</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -68260,7 +68260,7 @@ All requirements are met:
 
 The `map` function implements the pattern: the input grid contains a partial anti-diagonal of non-zero values; the output extends this by assigning each cell `(i, j)` the value corresponding to its `(i + j) % 3` diagonal class. All 3 examples in `/app/examples.json` pass.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>polyglot-c-py</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -71443,7 +71443,7 @@ The file `/app/polyglot/main.py.c` is a working polyglot. Mechanism:
 
 The two harmless warnings about `&quot;` are from the `&quot;&quot;&quot;` lines being inside `#if 0` blocks; the preprocessor skips them so they don&#x27;t affect compilation.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>distribution-search</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -74581,7 +74581,7 @@ The solution is verified and saved successfully. Summary:
 - `/app/find_distribution.py` — the solver script
 - `/app/dist.npy` — the saved NumPy distribution array
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>nginx-request-logging</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -75097,7 +75097,7 @@ Setup complete. All requirements are satisfied:
 
 **Access log location: `/var/log/nginx/benchmark-access.log`** (25 lines already recorded, including the 503 rate-limit rejections from the burst test).
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>mcmc-sampling-stan</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -75880,7 +75880,7 @@ The task is complete. Here&#x27;s a summary of what was accomplished:
 
 These values are consistent with the established posterior for the classic rat-tumor hierarchical Beta-Binomial model under the (α+β)^(-5/2) prior.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>break-filter-js-from-html</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -79039,7 +79039,7 @@ This is a Mutation XSS (mXSS) attack exploiting a parsing difference between Pyt
 
 4. **Trigger**: After filtering, the browser re-parses the output, creates the `&lt;img&gt;` element with `onerror`, the image fails to load (`src=x`), and `alert(1)` fires automatically.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>cobol-modernization</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -81590,7 +81590,7 @@ Key implementation details matching the COBOL:
 - **Amount parsing**: only ASCII digits are kept, mirroring COBOL&#x27;s &quot;non-numeric → 0&quot; behaviour
 - **Transaction record order**: BOOK(4) + AMOUNT(10) + SELLER(4) + BUYER(4) — written via `OPEN EXTEND` (append)
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>regex-log</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -82484,7 +82484,7 @@ The regex is saved to `/app/regex.txt`. Summary of the design:
 - ✅ Honors line boundaries (MULTILINE-safe)
 - ✅ Alnum boundaries work at line start/end
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>torch-tensor-parallelism</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -83947,7 +83947,7 @@ The implementation is complete at `/app/parallel_linear.py`. Here&#x27;s a summa
 
 Both classes handle `world_size == 1` cleanly (the autograd functions early-return), and the bias is `None` via `register_parameter` when `bias=False` to mirror `nn.Linear`&#x27;s convention.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>polyglot-rust-c</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -86565,7 +86565,7 @@ So:
 - `//\` + `&quot;#;`: C++ sees one `//` comment; Rust sees `//\` inside the string, then `&quot;#;` closes it.
 - The Rust `fn main()` lines, each preceded by `//\`: C++ splices each pair into one `//` comment; Rust sees the `//\` as a comment and the next line as real code.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>build-cython-ext</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -88932,7 +88932,7 @@ All done. Summary of what was done:
 
 Package structure unchanged — only in-place edits to existing source files, no files added/removed.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>crack-7z-hash</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -89272,7 +89272,7 @@ Done. Summary:
 - Extracted the archive and found the secret word: `honeybear`.
 - Wrote `honeybear` to `/app/solution.txt`.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>build-pov-ray</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -92573,7 +92573,7 @@ Build complete and verified.
 - **Installed** the resulting `povray` binary to `/usr/local/bin/povray` (`install -m 0755`).
 - **Sanity check** passes: rendering `/app/deps/illum1.pov` completes with exit 0 and prints the expected rendering statistics.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>code-from-image</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -93062,7 +93062,7 @@ print(H)
 
 The result starts with `bee26a`, matching the hint.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>bn-fit-modify</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -93835,7 +93835,7 @@ All three deliverables are in place:
 
 **Method:** Linear Gaussian BN fit with `pgmpy.LinearGaussianBayesianNetwork`, using OLS regressions of each node on its parents. The intervention was done by building a new model with Y&#x27;s incoming edges removed and its CPD replaced with N(0, 1e-9), then sampling via the model&#x27;s joint Gaussian (so D&#x27;s mean dropped from ~38 to ~15.5, reflecting removal of the Y→D contribution).
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>sparql-university</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -95413,7 +95413,7 @@ The query is saved at `/app/solution.sparql`. Let me trace through the logic onc
 - **John Smith** — only works in Biology_MIT (US, not EU) ✗
 - **Marie Dubois** — Math_Sorbonne has only 6 currently enrolled students (others graduated before 2025-08-16) ✗
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>headless-terminal</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -96065,7 +96065,7 @@ Done. Here&#x27;s a summary of what was delivered:
 - Empty `send_keystrokes(&quot;&quot;, 0.0)` is a safe no-op and the shell stays alive.
 - `from headless_terminal import HeadlessTerminal` works, and the class is a proper subclass of `BaseTerminal` with the exact `send_keystrokes(self, keystrokes: str, wait_sec: float = 0.0) -&gt; None` signature.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>sanitize-git-repo</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -97169,7 +97169,7 @@ All sanitization is complete. The repository has been cleaned of all API keys, w
 
 **One important caveat:** the sanitization only covers the working tree. The original sensitive values are still present in `git`&#x27;s object store (in earlier commits, e.g. `d6987af` &quot;Add fake git and hf tokens&quot; and the commit that introduced `process.py`&#x27;s hard-coded keys). If this repository has been or will be pushed to a remote, those values are still recoverable from the git history. To fully remove them, the history would need to be rewritten (e.g. with `git filter-repo` or `bfg-repo-cleaner`) and the remote force-pushed. I did not rewrite history because that is destructive — let me know if you want me to do that as well.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>mteb-retrieve</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -97441,7 +97441,7 @@ Top 5 results:
 4. PutnamBench: Neural theorem-proving on Putnam problems (0.5036)
 5. **MTEB: Massive Text Embedding Benchmark (0.4925)** ← written to result.txt
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>pypi-server</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -97864,7 +97864,7 @@ All set up and verified end-to-end.
 - `from vectorops import dotproduct; assert 1 == dotproduct([1,1], [0,1])` → passed
 - PEP 503 `simple` index reachable at `http://localhost:8080/simple/vectorops/`
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>vulnerable-secret</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -98685,7 +98685,7 @@ Extracted the secret key: `FLAG{b4ff3r_0v3rfl0w_m4st3r_k3y_2024}` and saved it t
 - The &quot;secret&quot; function decodes data at 0x404060 by XORing each byte with 0x42 until it hits the terminator 0x42.
 - Exploit: send 64 bytes of padding + `\x01`, which both bypasses the check and reveals the decoded flag.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>log-summary-date-ranges</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -99020,7 +99020,7 @@ total,INFO,56621]
 
 Method: parsed the date from each filename (since all lines within a file share that date), matched the severity token with a strict `\[(ERROR|WARNING|INFO)\]` regex, bucketed counts per date, then summed into each period (today, trailing 7/30 days inclusive, MTD inclusive, and all).
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>build-pmars</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -100214,7 +100214,7 @@ All requirements satisfied:
 - **Test passes**: `pmars -b -r 50 -f flashpaper.red rave.red | tail -n 1` → `Results: 12 30 8`
 - **Source tree intact** at `/app/pmars-0.9.4/`
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>hf-model-inference</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -100435,7 +100435,7 @@ Service is up and fully working. Summary:
 
 The service is running detached and ready to handle requests on `http://0.0.0.0:5000/sentiment`.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>git-multibranch</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -100895,7 +100895,7 @@ Setup complete and verified end-to-end.
 
 **End-to-end test passed** (clone → commit main &amp; dev → push → curl): `/index.html` returned `main branch content`, `/dev/index.html` returned `dev branch content`. Push latency was ~300 ms (well under the 3 s requirement).
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>modernize-scientific-stack</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -101366,7 +101366,7 @@ Station 102 mean temperature: 30.3°C
 ```
 Means match a hand calculation of the CSV values, and both `climate_plot_station_101.png` / `climate_plot_station_102.png` are written to `/tmp`. The legacy `climate_analyzer/analyze_climate.py` was not touched.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>constraints-scheduling</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -101930,7 +101930,7 @@ Scheduled the meeting for **Wednesday, January 17, 2024, 11:00-12:00 UTC**.
 - ✅ Within business hours (9-18 UTC), ends well before 16:45 (no buffer needed)
 - ✅ Earliest possible valid slot at minute granularity
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>multi-source-data-merger</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -102199,7 +102199,7 @@ Both output files are in place and pass all the success criteria:
 
 **`/app/conflicts.json`** — 3 conflicts detected (all for user 101, on `name`, `email`, `created_date`), each with values from all 3 sources and the priority-selected value from source_a. `total_conflicts` (3) matches the length of the `conflicts` list.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>fix-git</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -102581,7 +102581,7 @@ c4e38a1 Add code link for BLADE
 
 Heads up: `_layouts/default.html` had a lot of formatting-only changes (trailing whitespace on `{%` Liquid tags, `&lt;span class = &quot;venue&quot;&gt;` vs `&lt;span class=&quot;venue&quot;&gt;`, etc.) that were lumped in with the Stanford change. If you&#x27;d rather keep those out of the meaningful diff, I can split them into a separate formatting commit — just let me know.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>fix-code-vulnerability</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -103090,7 +103090,7 @@ def _hval(value):
 
 **Verification:** All 367 tests pass via `pytest -rA`.
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>git-leak-recovery</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -103336,7 +103336,7 @@ Let me also confirm the working tree is clean and that the README.md content has
 &lt;/think&gt;
 
 </pre>
-</details></td></tr><tr class="passed">
+</details></td></tr><tr class="passed" >
   <td>prove-plus-comm</td>
   <td data-sort="0"><span class="bucket-tag bucket-passed">passed</span></td>
   <td class="num" data-sort="1.0">1.0</td>
@@ -103597,7 +103597,7 @@ The proof is complete and compiles successfully into `plus_comm.vo`.
 
 `coqc plus_comm.v` produces `plus_comm.vo` with no warnings.
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>regex-chess</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -114125,7 +114125,7 @@ This is an extremely difficult problem - implementing a complete chess move gene
 
 I&#x27;ve spent extensive time debugging but the complexity of correctly implementing all these aspects simultaneously proved insurmountable. The file is structurally valid and contains the right number of patterns, but the chess logic is broken.
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>train-fasttext</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -119487,7 +119487,7 @@ Training configuration:
 - Selected from 10 seed runs (seed 4 performed best)
 - 405,519-word vocabulary, 5 labels (0–4 stars)
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>winning-avg-corewars</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -132364,7 +132364,7 @@ Summary of my approach:
 
 The fundamental trade-off: step 3 is the only step that gives 75%+ vs stone, but it cannot kill the snake&#x27;s imps (which move at step 2667, and gcd(3,2667)=3 means they never meet at the same position/cycle) nor thoroughly cover the core to beat the self-preserving g2-clear. Step 1 would solve snake/g2-clear but only gets 60% vs stone. Adding a step-switching mechanism requires 6+ instructions, which drops vampire from 77% to ~17% due to increased fang vulnerability.
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>feal-linear-cryptanalysis</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -142791,7 +142791,7 @@ echo &quot;kill done&quot;
 
 &gt;&gt;&gt; [Tool: bash (call_function_qwwd77l0zuoi_1)] args: {&quot;command&quot;: &quot;# Check if any attack is still running\ncat /tmp/attack_v4_out.txt | tail -5\necho \&quot;---\&quot;\n# Try the v5 attack (need to compile and run)\ncat &gt; /tmp/attack_v5.c &lt;&lt; &#x27;CFILE&#x27;\n#include &lt;stdio.h&gt;\n#include &lt;stdint.h&gt;\n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;pthread.h&gt;\n#include &lt;time.h&gt;\n\n#define NPAIRS 32\n#define NKEYS (1 &lt;&lt; 20)\n\nuint32_t expand_table[NKEYS];\nuint64_t pairs[NPAIRS][2];\n\nstatic inline uint32_t expand_fn(uint32_t k) {\n    return k ^ (k &lt;&lt; 16) ^ (k * 12345);\n}\n\nstatic inline uint8_t g_function(uint8_t a, uint8_t b, uint8_t x) {\n    uint8_t temp = (a + b + x) &amp; 0xFF;\n    return ((temp &lt;&lt; 2) | (temp &gt;&gt; 6)) &amp; 0xFF;\n}\n\nstatic inline uint32_t f_function(uint32_t input_val) {\n    uint8_t x0 = input_val &amp; 0xFF;\n    uint8_t x1 = (input_val &gt;&gt; 8) &amp; 0xFF;\n    uint8_t x2 = (input_val &gt;&gt; 16) &amp; 0xFF;\n    uint8_t x3 = (input_val &gt;&gt; 24) &amp; 0xFF;\n    uint8_t y2 = g_function(x3 ^ x2, x1 ^ x0, 1);\n    uint8_t y3 = g_function(x3, y2, 0);\n    uint8_t y1 = g_function(x1 ^ x0, y2, 0);\n    uint8_t y0 = g_function(x0, y1, 1);\n    return ((uint32_t)y0) | ((uint32_t)y1 &lt;&lt; 8) | ((uint32_t)y2 &lt;&lt; 16) | ((uint32_t)y3 &lt;&lt; 24);\n}\n\nstatic inline uint32_t f_inverse(uint32_t t) {\n    uint8_t t0 = t &amp; 0xFF;\n    uint8_t t1 = (t &gt;&gt; 8) &amp; 0xFF;\n    uint8_t t2 = (t &gt;&gt; 16) &amp; 0xFF;\n    uint8_t t3 = (t &gt;&gt; 24) &amp; 0xFF;\n    uint8_t s2 = ((t2 &gt;&gt; 2) | (t2 &lt;&lt; 6)) &amp; 0xFF;\n    uint8_t s3 = ((t3 &gt;&gt; 2) | (t3 &lt;&lt; 6)) &amp; 0xFF;\n    uint8_t s4 = ((t1 &gt;&gt; 2) | (t1 &lt;&lt; 6)) &amp; 0xFF;\n    uint8_t s5 = ((t0 &gt;&gt; 2) | (t0 &lt;&lt; 6)) &amp; 0xFF;\n    uint8_t x3 = (s3 - t2) &amp; 0xFF;\n    uint8_t x1x0 = (s4 - t2) &amp; 0xFF;\n    uint8_t x0 = (s5 - t1 - 1) &amp; 0xFF;\n    uint8_t x3x2 = (s2 - 1 - x1x0) &amp; 0xFF;\n    uint8_t x2 = x3 ^ x3x2;\n    uint8_t x1 = x1x0 ^ x0;\n    return ((uint32_t)x0) | ((uint32_t)x1 &lt;&lt; 8) | ((uint32_t)x2 &lt;&lt; 16) | ((uint32_t)x3 &lt;&lt; 24);\n}\n\nstatic inline uint32_t getleft(uint64_t x) { return (x &gt;&gt; 32) &amp; 0xFFFFFFFF; }\nstatic inline uint32_t getright(uint64_t x) { return x &amp; 0xFFFFFFFF; }\n\nstatic inline void forward_1_round(uint64_t pt, uint32_t K, uint32_t *L1, uint32_t *R1) {\n    uint32_t L = getleft(pt), R = getright(pt);\n    R ^= L;\n    uint32_t mixed = f_function(R ^ K);\n    *L1 = R;\n    *R1 = L ^ mixed;\n}\n\nstatic inline void peel_last_round_pair(uint64_t ct, uint32_t K, uint32_t *L3, uint32_t *R3) {\n    uint32_t CL = getleft(ct);\n    uint32_t CR = getright(ct);\n    *R3 = CR ^ CL;\n    *L3 = CL ^ f_function((CR ^ CL) ^ K);\n}\n\nvolatile int found = 0;\nint k0_found = -1, k1_found = -1, k2_found = -1, k3_found = -1;\ntime_t start_time;\n\ntypedef struct {\n    int thread_id;\n    int nthreads;\n} ThreadArg;\n\nvoid *worker(void *arg) {\n    ThreadArg *ta = (ThreadArg *)arg;\n    int tid = ta-&gt;thread_id;\n    int nthreads = ta-&gt;nthreads;\n    \n    for (int k_0 = tid; k_0 &lt; NKEYS &amp;&amp; !found; k_0 += nthreads) {\n        uint32_t K0 = expand_table[k_0];\n        uint32_t L1_0, R1_0, L1_1, R1_1;\n        forward_1_round(pairs[0][0], K0, &amp;L1_0, &amp;R1_0);\n        forward_1_round(pairs[1][0], K0, &amp;L1_1, &amp;R1_1);\n        \n        for (int k_3 = 0; k_3 &lt; NKEYS &amp;&amp; !found; k_3++) {\n            uint32_t K3 = expand_table[k_3];\n            uint32_t L3_0, R3_0, L3_1, R3_1;\n            peel_last_round_pair(pairs[0][1], K3, &amp;L3_0, &amp;R3_0);\n            peel_last_round_pair(pairs[1][1], K3, &amp;L3_1, &amp;R3_1);\n            \n            uint32_t t_1 = L1_0 ^ L3_0;\n            uint32_t K1 = R1_0 ^ f_inverse(t_1);\n            uint32_t check_1 = f_function(R1_1 ^ K1);\n            if (check_1 != (L1_1 ^ L3_1)) continue;\n            \n            uint32_t u_1 = R1_0 ^ R3_0;\n            uint32_t K2 = L3_0 ^ f_inverse(u_1);\n            uint32_t check_2 = f_function(L3_1 ^ K2);\n            if (check_2 != (R1_1 ^ R3_1)) continue;\n            \n            int all_pass = 1;\n            for (int i = 2; i &lt; NPAIRS; i++) {\n                uint32_t L1_i, R1_i, L3_i, R3_i;\n                forward_1_round(pairs[i][0], K0, &amp;L1_i, &amp;R1_i);\n                peel_last_round_pair(pairs[i][1], K3, &amp;L3_i, &amp;R3_i);\n                if (f_function(R1_i ^ K1) != (L1_i ^ L3_i)) { all_pass = 0; break; }\n                if (f_function(L3_i ^ K2) != (R1_i ^ R3_i)) { all_pass = 0; break; }\n            }\n            if (!all_pass) continue;\n            \n            int k1 = -1, k2 = -1;\n            for (int j = 0; j &lt; NKEYS; j++) {\n                if (expand_table[j] == K1) { k1 = j; break; }\n            }\n            for (int j = 0; j &lt; NKEYS; j++) {\n                if (expand_table[j] == K2) { k2 = j; break; }\n            }\n            \n            k0_found = k_0;\n            k1_found = k1;\n            k2_found = k2;\n            k3_found = k_3;\n            found = 1;\n            fprintf(stderr, \&quot;Thread %d: Found k0=%x at t=%ld\\n\&quot;, tid, k_0, time(NULL) - start_time);\n            break;\n        }\n        \n        if ((k_0 / nthreads) % 5000 == 0) {\n            fprintf(stderr, \&quot;Thread %d: k_0 = %x / %x (t=%ld)\\n\&quot;, tid, k_0, NKEYS, time(NULL) - start_time);\n        }\n    }\n    return NULL;\n}\n\nint main() {\n    for (int k = 0; k &lt; NKEYS; k++) {\n        expand_table[k] = expand_fn(k);\n    }\n    \n    FILE *fp = fopen(\&quot;/app/pairs.txt\&quot;, \&quot;r\&quot;);\n    if (!fp) { perror(\&quot;fopen\&quot;); return 1; }\n    for (int i = 0; i &lt; NPAIRS; i++) {\n        if (fscanf(fp, \&quot;%lu %lu\&quot;, &amp;pairs[i][0], &amp;pairs[i][1]) != 2) {\n            fprintf(stderr, \&quot;Failed to read pair %d\\n\&quot;, i); return 1;\n        }\n    }\n    fclose(fp);\n    \n    int nthreads = 64;\n    pthread_t threads[64];\n    ThreadArg targs[64];\n    \n    start_time = time(NULL);\n    \n    for (int i = 0; i &lt; nthreads; i++) {\n        targs[i].thread_id = i;\n        targs[i].nthreads = nthreads;\n        pthread_create(&amp;threads[i], NULL, worker, &amp;targs[i]);\n    }\n    for (int i = 0; i &lt; nthreads; i++) {\n        pthread_join(threads[i], NULL);\n    }\n    \n    time_t end = time(NULL);\n    fprintf(stderr, \&quot;Total time: %ld sec\\n\&quot;, end - start_time);\n    \n    if (found) {\n        printf(\&quot;k_0 = 0x%05x\\n\&quot;, k0_found);\n        printf(\&quot;k_1 = 0x%05x\\n\&quot;, k1_found);\n        printf(\&quot;k_2 = 0x%05x\\n\&quot;, k2_found);\n        printf(\&quot;k_3 = 0x%05x\\n\&quot;, k3_found);\n    } else {\n        printf(\&quot;Keys not found!\\n\&quot;);\n    }\n    \n    return found ? 0 : 1;\n}\nCFILE\ngcc -O3 -march=native -o /tmp/attack_v5 /tmp/attack_v5.c -lpthread\necho \&quot;Compiled. Starting attack with 64 threads...\&quot;\nnohup /tmp/attack_v5 &gt; /tmp/attack_v5_out.txt 2&gt;&amp;1 &amp;\ndisown\nsleep 30\necho \&quot;After 30 sec:\&quot;\ncat /tmp/attack_v5_out.txt&quot;}
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>llm-inference-batching-scheduler</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -150123,7 +150123,7 @@ So max_diff constraint is more &quot;uniform&quot; than thresh (which depends on
 Let me try max_diff=3, 5, 7, etc.
 &lt;/think&gt;
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>rstan-to-pystan</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -152276,7 +152276,7 @@ The `init_radius` and `num_thin` are accepted. The &quot;adapt_&quot; prefix is 
 
 &gt;&gt;&gt; [Tool: bash (call_function_15e1b061f3b5_1)] args: {&quot;command&quot;: &quot;python3 pystan_analysis.py 2&gt;&amp;1 | tail -50&quot;, &quot;timeout_secs&quot;: 3600}
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>video-processing</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -163267,7 +163267,7 @@ jump_land_frame_number = 61
 
 The flight time of 5 frames (~0.17 seconds) is reasonable for a hurdle jump. The script uses only `cv2`, `numpy`, and `toml` as required.
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>path-tracing</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -173532,7 +173532,7 @@ My rendering matches the actual pixels. Let me now render the full image and ver
 &lt;&lt;&lt; [Tool ERR (call_function_hutxybyrhmil_1): Invalid JSON arguments: EOF while parsing a string at line 1 column 4875]
 Error: LLM API returned error: {&quot;type&quot;:&quot;error&quot;,&quot;error&quot;:{&quot;type&quot;:&quot;bad_request_error&quot;,&quot;message&quot;:&quot;invalid params, invalid function arguments json string, tool_call_id: call_function_hutxybyrhmil_1 (2013)&quot;,&quot;http_code&quot;:&quot;400&quot;},&quot;request_id&quot;:&quot;066e10fc072ef42855adce6714d8aa84&quot;}
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>protein-assembly</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -179917,7 +179917,7 @@ The gBlock has been successfully designed and saved to `/app/gblock.txt`. Here&#
 - ✓ Subprotein order N→C: antibody binder → donor → DHFR → acceptor → molecule binder
 - ✓ Donor and acceptor separated by DHFR + GS linkers
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>query-optimize</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -182098,7 +182098,7 @@ diff /tmp/output1.txt /tmp/output7.txt &amp;&amp; echo &quot;MATCH&quot; || echo
 &lt;/think&gt;
 
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>filter-js-from-html</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -190071,7 +190071,7 @@ The filter is complete and all tests pass. Here&#x27;s a summary of `/app/filter
 - Obfuscation resistance: HTML entities, percent-encoding, mixed case, tabs/newlines, zero-width chars, nested parens, base64 data URLs
 - 95 unit tests + 1 large integration test all pass
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>schemelike-metacircular-eval</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -196907,7 +196907,7 @@ So fread handles multi-line expressions. E.g., if the file is:
 
 fread reads &quot;(define (f x)&quot; (line 1), then &quot;(* x x))&quot; (line 2). Tokens
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>extract-elf</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -202077,7 +202077,7 @@ And the file offset for vaddr 0x403DB8 (first address in PH[5]) is p_offset + 0 
 So the value should be data.readUInt32LE(0x2DB8) = 4416. But my script outputs 15816.
 
 There&#x27;s a bug</pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>adaptive-rejection-sampler</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -205487,7 +205487,7 @@ OK the code is correct. Let me write it to a file.
 Actually, I realize I should also handle the case where the domain is (a, Inf) with a &gt; 0. For example, Exponential(1) on (0, Inf). The left piece is [0, T_1], and the integral is int_0^{T_1} exp(-x) dx = 1 - exp(-T_1). This is finite and positive. Good.
 
 But what if the slope s_1 is positive? For example, Gamma(2, 1) on (0, Inf). log</pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>torch-pipeline-parallelism</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -208207,7 +208207,7 @@ When I do h_out.backward(grad), it backprops: grad → h_out.grad_fn → layers 
 Great, this should work.
 
 But wait, there&#x27;s a subtlety. When I do `h_out.backward(grad)`,</pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>circuit-fibsqrt</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -214436,7 +214436,7 @@ But C is 15 bits. C == 0 is a 15-bit AND of (NOT C[i]) for all i. 15 gates for t
 
 Hmm wait, AND of NOT C[i] is 1 iff all C[i] are 0, iff C = 0. So 
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>write-compressor</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -217865,7 +217865,7 @@ If the current bit is infeasible, the encoder has a problem.
 
 For example, output b = 0 (so fraction decreases by 1, or rather
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>dna-assembly</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -221063,7 +221063,7 @@ For the backbone (input plasmid):
   
   The assembled product at the SNAP-backbone junction is: ...SNAP...GTAA-T
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>tune-mjcf</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -232532,7 +232532,7 @@ With Euler and dt=0.002, yes. With other settings, maybe not.
 What if I use a different model that reaches the same equilibrium at 2s with a larger timestep?
 
 For example, what if I use a model with higher stiffness (so the cable</pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>gcode-to-text</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -236274,7 +236274,7 @@ Traceback (most recent call last):
 NameError: name &#x27;img_pca_flipped&#x27; is not defined
 ]
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>password-recovery</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -238734,7 +238734,7 @@ CRC at offset 3145714: 0x6B6ABD62
 CRC at offset 3145715: 0xECFE5734
 ]
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>raman-fitting</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -249528,7 +249528,7 @@ The data has:
 The fact that the data is very dense at low x (0.26 cm⁻¹ spacing) and very sparse at high x (595 cm⁻¹ spacing) is unusual.
 
 For a typical Raman spectrum</pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>chess-best-move</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -253077,7 +253077,7 @@ b7 ASCII:
                             ..####################..
                               ####################
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>db-wal-recovery</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -261545,7 +261545,7 @@ The output at `/app/recovered.json`:
 [{&quot;id&quot;: 1, &quot;name&quot;: &quot;apple&quot;, &quot;value&quot;: 100}, {&quot;id&quot;: 2, &quot;name&quot;: &quot;banana&quot;, &quot;value&quot;: 200}, {&quot;id&quot;: 3, &quot;name&quot;: &quot;cherry&quot;, &quot;value&quot;: 300}, {&quot;id&quot;: 4, &quot;name&quot;: &quot;date&quot;, &quot;value&quot;: 400}, {&quot;id&quot;: 5, &quot;name&quot;: &quot;elderberry&quot;, &quot;value&quot;: 500}, {&quot;id&quot;: 6, &quot;name&quot;: &quot;fig&quot;, &quot;value&quot;: 600}, {&quot;id&quot;: 7, &quot;name&quot;: &quot;grape&quot;, &quot;value&quot;: 700}, {&quot;id&quot;: 8, &quot;name&quot;: &quot;honeydew&quot;, &quot;value&quot;: 800}, {&quot;id&quot;: 9, &quot;name&quot;: &quot;indian_fig&quot;, &quot;value&quot;: 900}, {&quot;id&quot;: 10, &quot;name&quot;: &quot;jackfruit&quot;, &quot;value&quot;: 1000}, {&quot;id&quot;: 11, &quot;name&quot;: &quot;kiwi&quot;, &quot;value&quot;: 1100}]
 ```
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" title="No usage data — sandbox killed by AgentTimeoutError before ignis-projects/*.usage.json could sync.">
   <td>overfull-hbox</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -266937,7 +266937,7 @@ For the &quot;Finnish in-&quot; line (0.46pt), the &quot;electrical&quot; change
 + muttered Finnish sagacity to herself
 ]
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>gpt2-codegolf</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -272651,7 +272651,7 @@ Let me write the code to /app/gpt2.c and check the size.
 &lt;/think&gt;
 Order is confirmed: per-layer weights (c_attn.b, c_attn.w, c_proj.b, c_proj.w, ln_1.b, ln_1.g, ln_2.b, ln_2.g, c_fc.b, c_fc.w, mlp_proj.b, mlp_proj.w), then ln_f.b/g, wpe, wte. Now let me write the C file:
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>extract-moves-from-video</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -273156,7 +273156,7 @@ I need a higher frame rate to capture commands. Let me extract at the native 30f
 &lt;/think&gt;
 
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>reshard-c4-data</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -274686,7 +274686,7 @@ Everything is in place and tested. Summary of what was built and verified:
 
 **Other tests:** a 17 MiB fixture with a 16 MiB+ file and 75 small files (forces both chunk splitting and multi-level sharding) round-tripped identically; nested subdirs, empty files, and zero-byte files all preserved; non-existent nested output dirs are created. `uv run` after `uv sync` does not fetch any additional packages.
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>make-doom-for-mips</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -289845,7 +289845,7 @@ Let me first explore which platform-specific files we need to remove:]&lt;]minim
 &lt;/think&gt;
 
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>pytorch-model-cli</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -290479,7 +290479,7 @@ Implementation summary:
 - `cJSON` parses `weights.json` into the six tensors of the 784→16→16→10 MLP (`Linear → ReLU → Linear → ReLU → Linear`).
 - Forward pass uses a tiny hand-rolled matrix-vector multiply; pixels are scaled to `[0,1]`; the argmax of the 10 logits is the prediction.
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>configure-git-webserver</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -291716,7 +291716,7 @@ curl http://server:8080/hello.html   # → hello world
 - To restart the webserver manually: `pkill -f &quot;http.server 8080&quot; &amp;&amp; nohup python3 -m http.server 8080 --bind 0.0.0.0 --directory /var/www/site &gt;&gt; /var/log/webserver.log 2&gt;&amp;1 &amp; disown`.
 - The webserver is the stdlib `http.server` — fine for serving static files, no special config needed.
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>financial-document-processor</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -293276,7 +293276,7 @@ All tasks complete:
 
 **Summary CSV totals row:** `total,75912.72,5402.48` (computed by `awk`)
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>mailman</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -296354,7 +296354,7 @@ Setup complete. All three tests pass.
 - `test_mlist_exists`: `reading-group@local.edu` exists with `SubscriptionPolicy.open` ✓
 - `test_join_flow`: email to `reading-group-join@local.edu` → user gets `reading-group-confirm+…` message in `/var/mail/&lt;user&gt;` → reply to it → user is added to the list immediately (open policy = no moderator approval) ✓
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>count-dataset-tokens</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -297127,7 +297127,7 @@ The answer has been written to `/app/answer.txt`.
 - Tokenized the concatenated `deepseek_reasoning` + `deepseek_solution` for each example using the Qwen2.5-1.5B-Instruct tokenizer
 - Total: **79566** tokens
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>cancel-async-tasks</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -297692,7 +297692,7 @@ Done. `/app/run.py` is in place and importable as `from run import run_tasks`.
 
 No third-party packages needed; pure stdlib `asyncio` on Python 3.13 (works on 3.8+).
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>portfolio-optimization</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -298270,7 +298270,7 @@ All requirements met:
 `portfolio_optimized.py`:
 - Validates shapes, casts to `np.float64`, ensures C-contiguous layout, then forwards to the compiled `portfolio_optimized_c` module. Raises clear `ValueError`s on dimension/shape mismatches.
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>dna-insert</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -299672,7 +299672,7 @@ Output: ccgaccactaccagcagaacacccccatcggcg
 ]&lt;]minimax[&gt;[&lt;/content&gt;]&lt;]minimax[&gt;[&lt;path&gt;/tmp/diff.txt]&lt;]minimax[&gt;[&lt;/path&gt;]&lt;]minimax[&gt;[&lt;/invoke&gt;
 ]&lt;]minimax[&gt;[&lt;/tool_call&gt;
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>openssl-selfsigned-cert</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -300012,7 +300012,7 @@ Certificate verification successful
 
 The certificate&#x27;s public key also matches the private key, confirming they&#x27;re a valid pair.
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>kv-store-grpc</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -300354,7 +300354,7 @@ All tasks completed successfully:
    - `GetVal(key=&#x27;foo&#x27;)` → `42`
    - `GetVal(key=&#x27;missing&#x27;)` → `0` (default)
 </pre>
-</details></td></tr><tr class="failed">
+</details></td></tr><tr class="failed" >
   <td>install-windows-3.11</td>
   <td data-sort="1"><span class="bucket-tag bucket-failed">failed</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -300426,7 +300426,7 @@ drwxr-xr-x 1 root root        26 Oct 30  2025 ..
 &lt;/think&gt;
 
 </pre>
-</details></td></tr><tr class="errored">
+</details></td></tr><tr class="errored" >
   <td>pytorch-model-recovery</td>
   <td data-sort="2"><span class="bucket-tag bucket-errored">errored</span></td>
   <td class="num" data-sort="-1">—</td>
@@ -301874,7 +301874,7 @@ Task complete. Summary:
 - Only `output_layer.weight` and `output_layer.bias` differ between `/app/model.pt` and `/app/weights.pt`
 - `/app/weights.pt` not modified (md5 `ac1cd9f00933ec343da8ec2a59b90f96`)
 </pre>
-</details></td></tr><tr class="errored">
+</details></td></tr><tr class="errored" >
   <td>sqlite-with-gcov</td>
   <td data-sort="2"><span class="bucket-tag bucket-errored">errored</span></td>
   <td class="num" data-sort="0.0">0.0</td>
@@ -302089,7 +302089,7 @@ I need to install build tools. Let me do that and extract the source in parallel
 &lt;&lt;&lt; [Tool ERR (call_function_19lg5f4h91la_1): Invalid JSON arguments: EOF while parsing a string at line 1 column 35]
 Error: LLM API returned error: {&quot;type&quot;:&quot;error&quot;,&quot;error&quot;:{&quot;type&quot;:&quot;bad_request_error&quot;,&quot;message&quot;:&quot;invalid params, invalid function arguments json string, tool_call_id: call_function_19lg5f4h91la_1 (2013)&quot;,&quot;http_code&quot;:&quot;400&quot;},&quot;request_id&quot;:&quot;066e8266658ea4d32466aacd7c01fc83&quot;}
 </pre>
-</details></td></tr><tr class="errored">
+</details></td></tr><tr class="errored" >
   <td>model-extraction-relu-logits</td>
   <td data-sort="2"><span class="bucket-tag bucket-errored">errored</span></td>
   <td class="num" data-sort="0.0">0.0</td>
