@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ignis · model provider pricing</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --fg: #c9d1d9;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --border: #21262d;
+    --row: #161b22;
+    --row-hover: #1c2128;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.5rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.55;
+  }
+  main { max-width: 960px; margin: 0 auto; }
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h2 {
+    margin: 2.5rem 0 0.75rem;
+    font-size: 1rem;
+    color: var(--muted);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--row);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.92rem;
+  }
+  thead th {
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: right;
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+    background: transparent;
+  }
+  thead th:first-child, thead th.left { text-align: left; }
+  tbody td {
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+  tbody td:first-child, tbody td.left { text-align: left; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--row-hover); }
+
+  code, .model {
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.85em;
+    background: rgba(255,255,255,0.04);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+  }
+  .provider { color: var(--fg); }
+  .note {
+    color: var(--muted);
+    font-size: 0.78rem;
+    margin-top: 0.4rem;
+  }
+  .legend { color: var(--muted); font-size: 0.85rem; margin: 0.4rem 0 1.25rem; }
+
+  footer {
+    margin-top: 3rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>ignis &middot; model provider pricing</h1>
+  <p class="sub">
+    The price table underlying the <strong>Est. cost</strong> and <strong>Cost / passed task</strong>
+    columns in the <a href="/">benchmark reports</a>. Sourced from each
+    provider's public pricing page; pinned to a specific snapshot so the
+    cost math is reproducible.
+  </p>
+
+  <h2>Per 1M tokens</h2>
+  <p class="legend">
+    Prices are denominated in <strong>CNY</strong> (the canonical currency on each
+    provider's API pricing page). The USD column applies a fixed
+    <strong>≈1 USD = 7.10 CNY</strong> rate &mdash; the same conversion the
+    compare reports use. <em>Input miss</em> is uncached input, <em>cache hit</em>
+    is input matched by the provider's prompt cache, <em>output</em> is generated
+    tokens.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th class="left">Provider</th>
+        <th class="left">Model</th>
+        <th>Input miss</th>
+        <th>Cache hit</th>
+        <th>Output</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="left provider">DeepSeek</td>
+        <td class="left"><span class="model">deepseek-v4-flash</span></td>
+        <td>¥1.00 &middot; <span style="color:var(--muted)">≈$0.14</span></td>
+        <td>¥0.02 &middot; <span style="color:var(--muted)">≈$0.003</span></td>
+        <td>¥2.00 &middot; <span style="color:var(--muted)">≈$0.28</span></td>
+        <td><a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/">api-docs.deepseek.com</a></td>
+      </tr>
+      <tr>
+        <td class="left provider">Moonshot</td>
+        <td class="left"><span class="model">kimi-for-coding</span> (kimi-2.6)</td>
+        <td>¥6.50 &middot; <span style="color:var(--muted)">≈$0.92</span></td>
+        <td>¥1.10 &middot; <span style="color:var(--muted)">≈$0.15</span></td>
+        <td>¥27.00 &middot; <span style="color:var(--muted)">≈$3.80</span></td>
+        <td><a href="https://platform.kimi.com/docs/pricing/chat-k26">platform.kimi.com</a></td>
+      </tr>
+      <tr>
+        <td class="left provider">MiniMax</td>
+        <td class="left"><span class="model">MiniMax-M3</span> (≤512k ctx, promo)</td>
+        <td>¥2.10 &middot; <span style="color:var(--muted)">≈$0.30</span></td>
+        <td>¥0.42 &middot; <span style="color:var(--muted)">≈$0.06</span></td>
+        <td>¥8.40 &middot; <span style="color:var(--muted)">≈$1.18</span></td>
+        <td><a href="https://platform.minimaxi.com/docs/guides/pricing-paygo.md">platform.minimaxi.com</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Notes</h2>
+  <ul style="padding-left:1.2rem;color:var(--fg);font-size:0.92rem;line-height:1.7;">
+    <li>
+      <strong>kimi-2.6 / Coding Plan.</strong> In practice the run uses a
+      flat-fee Coding Plan subscription, not pay-per-token. The cost figure
+      shown in compare reports is the <em>per-token equivalent</em> at the
+      published k2.6 API rate &mdash; useful for cross-provider comparison, not
+      out-of-pocket for the subscriber.
+    </li>
+    <li>
+      <strong>MiniMax-M3 promo tier.</strong> The ≤512k-context standard rate
+      is a promotional price; the enterprise tier and the larger
+      ≤1M-context tier are higher. We pin to the rate that applied during the
+      run; later runs will be re-pinned if MiniMax bumps the price.
+    </li>
+    <li>
+      <strong>USD conversion.</strong> Fixed at 1 USD = 7.10 CNY (mid-2026
+      reference rate). The conversion is applied at total-cost time, not
+      per-token, so rounding accumulates at most once per run.
+    </li>
+    <li>
+      <strong>Formula.</strong>
+      <code>cost = (input − cache) × miss-price + cache × hit-price + output × out-price</code>
+      &mdash; same formula the
+      <a href="https://github.com/Fullstop000/ignis/blob/master/benchmarks/terminal-bench/scripts/compare_runs.py">
+      compare_runs.py</a> headline uses when <code>--price-cny</code> is
+      passed for a run.
+    </li>
+  </ul>
+
+  <footer>
+    Prices reviewed 2026-06-08. Spotted a stale or wrong number?
+    Open an issue on
+    <a href="https://github.com/Fullstop000/ignis/issues">github.com/Fullstop000/ignis/issues</a>.
+  </footer>
+</main>
+</body>
+</html>
