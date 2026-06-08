@@ -24,22 +24,10 @@
     line-height: 1.55;
   }
   main { max-width: 960px; margin: 0 auto; }
-  h1 {
-    font-size: 1.75rem;
-    margin: 0 0 0.5rem;
-    letter-spacing: -0.01em;
-  }
-  .sub { color: var(--muted); margin: 0 0 2rem; }
+  h1 { font-size: 1.6rem; margin: 0 0 0.4rem; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 1.75rem; font-size: 0.9rem; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  h2 {
-    margin: 2.5rem 0 0.75rem;
-    font-size: 1rem;
-    color: var(--muted);
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
 
   table {
     width: 100%;
@@ -59,7 +47,6 @@
     text-align: right;
     padding: 0.7rem 0.9rem;
     border-bottom: 1px solid var(--border);
-    background: transparent;
   }
   thead th:first-child, thead th.left { text-align: left; }
   tbody td {
@@ -71,8 +58,7 @@
   tbody td:first-child, tbody td.left { text-align: left; }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr:hover { background: var(--row-hover); }
-
-  code, .model {
+  .model {
     font-family: "SF Mono", Menlo, Consolas, monospace;
     font-size: 0.85em;
     background: rgba(255,255,255,0.04);
@@ -80,117 +66,64 @@
     border-radius: 3px;
     border: 1px solid var(--border);
   }
-  .provider { color: var(--fg); }
-  .note {
+  .notes {
     color: var(--muted);
-    font-size: 0.78rem;
-    margin-top: 0.4rem;
+    font-size: 0.82rem;
+    margin: 1.25rem 0 0;
+    padding-left: 1.1rem;
+    line-height: 1.6;
   }
-  .legend { color: var(--muted); font-size: 0.85rem; margin: 0.4rem 0 1.25rem; }
-
-  footer {
-    margin-top: 3rem;
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
+  .notes li + li { margin-top: 0.2rem; }
 </style>
 </head>
 <body>
 <main>
   <h1>ignis &middot; model provider pricing</h1>
-  <p class="sub">
-    The price table underlying the <strong>Est. cost</strong> and <strong>Cost / passed task</strong>
-    columns in the <a href="/">benchmark reports</a>. Sourced from each
-    provider's public pricing page; pinned to a specific snapshot so the
-    cost math is reproducible.
-  </p>
+  <p class="sub">Per 1M tokens. CNY with USD at <strong>1 USD = 7.10 CNY</strong>.</p>
 
-  <h2>Prices &mdash; per 1M tokens</h2>
-  <p class="legend">
-    All prices below are quoted <strong>per 1,000,000 tokens</strong> &mdash; the
-    base unit used by every provider's published rate sheet. Prices are in
-    <strong>CNY</strong> with a <strong>USD</strong> equivalent at
-    <strong>≈1 USD = 7.10 CNY</strong> (the same conversion the compare
-    reports apply). <em>Input miss</em> is uncached input, <em>cached input</em>
-    is input matched by the provider's prompt cache, <em>output</em> is generated
-    tokens.
-  </p>
   <table>
     <thead>
       <tr>
         <th class="left">Provider</th>
         <th class="left">Model</th>
-        <th>Input miss / 1M</th>
-        <th>Cached input / 1M</th>
-        <th>Output / 1M</th>
+        <th>Input miss</th>
+        <th>Cached input</th>
+        <th>Output</th>
         <th>Source</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="left provider">DeepSeek</td>
+        <td class="left">DeepSeek</td>
         <td class="left"><span class="model">deepseek-v4-flash</span></td>
-        <td>¥1.00 &middot; <span style="color:var(--muted)">≈$0.14</span></td>
-        <td>¥0.02 &middot; <span style="color:var(--muted)">≈$0.003</span></td>
-        <td>¥2.00 &middot; <span style="color:var(--muted)">≈$0.28</span></td>
+        <td>¥1.00 &middot; $0.14</td>
+        <td>¥0.02 &middot; $0.003</td>
+        <td>¥2.00 &middot; $0.28</td>
         <td><a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/">api-docs.deepseek.com</a></td>
       </tr>
       <tr>
-        <td class="left provider">Moonshot</td>
+        <td class="left">Moonshot</td>
         <td class="left"><span class="model">kimi-2.6</span></td>
-        <td>¥6.50 &middot; <span style="color:var(--muted)">≈$0.92</span></td>
-        <td>¥1.10 &middot; <span style="color:var(--muted)">≈$0.15</span></td>
-        <td>¥27.00 &middot; <span style="color:var(--muted)">≈$3.80</span></td>
+        <td>¥6.50 &middot; $0.92</td>
+        <td>¥1.10 &middot; $0.15</td>
+        <td>¥27.00 &middot; $3.80</td>
         <td><a href="https://platform.kimi.com/docs/pricing/chat-k26">platform.kimi.com</a></td>
       </tr>
       <tr>
-        <td class="left provider">MiniMax</td>
-        <td class="left"><span class="model">MiniMax-M3</span> (≤512k ctx, promo)</td>
-        <td>¥2.10 &middot; <span style="color:var(--muted)">≈$0.30</span></td>
-        <td>¥0.42 &middot; <span style="color:var(--muted)">≈$0.06</span></td>
-        <td>¥8.40 &middot; <span style="color:var(--muted)">≈$1.18</span></td>
+        <td class="left">MiniMax</td>
+        <td class="left"><span class="model">MiniMax-M3</span></td>
+        <td>¥2.10 &middot; $0.30</td>
+        <td>¥0.42 &middot; $0.06</td>
+        <td>¥8.40 &middot; $1.18</td>
         <td><a href="https://platform.minimaxi.com/docs/guides/pricing-paygo.md">platform.minimaxi.com</a></td>
       </tr>
     </tbody>
   </table>
 
-  <h2>Notes</h2>
-  <ul style="padding-left:1.2rem;color:var(--fg);font-size:0.92rem;line-height:1.7;">
-    <li>
-      <strong>kimi-2.6 / Coding Plan.</strong> In practice the run uses a
-      flat-fee Coding Plan subscription, not pay-per-token. The cost figure
-      shown in compare reports is the <em>per-token equivalent</em> at the
-      published k2.6 API rate &mdash; useful for cross-provider comparison, not
-      out-of-pocket for the subscriber.
-    </li>
-    <li>
-      <strong>MiniMax-M3 promo tier.</strong> The ≤512k-context standard rate
-      is a promotional price; the enterprise tier and the larger
-      ≤1M-context tier are higher. We pin to the rate that applied during the
-      run; later runs will be re-pinned if MiniMax bumps the price.
-    </li>
-    <li>
-      <strong>USD conversion.</strong> Fixed at 1 USD = 7.10 CNY (mid-2026
-      reference rate). The conversion is applied at total-cost time, not
-      per-token, so rounding accumulates at most once per run.
-    </li>
-    <li>
-      <strong>Formula.</strong>
-      <code>cost = (input − cache) × miss + cache × hit + output × out</code>,
-      where each <em>token</em>-count is multiplied by the matching
-      <em>per-1M-token</em> price (so the product is divided by 1M).
-      Same formula the
-      <a href="https://github.com/Fullstop000/ignis/blob/master/benchmarks/terminal-bench/scripts/compare_runs.py">
-      compare_runs.py</a> headline uses when <code>--price-cny</code> is
-      passed for a run.
-    </li>
+  <ul class="notes">
+    <li>kimi-2.6 is billed via a flat-fee Coding Plan in practice; rates above are the per-token equivalent.</li>
+    <li>MiniMax-M3 row uses the ≤512k-context promotional rate.</li>
   </ul>
-
-  <footer>
-    Prices reviewed 2026-06-08. Spotted a stale or wrong number?
-    Open an issue on
-    <a href="https://github.com/Fullstop000/ignis/issues">github.com/Fullstop000/ignis/issues</a>.
-  </footer>
 </main>
 </body>
 </html>
