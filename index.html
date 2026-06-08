@@ -54,6 +54,10 @@
     padding: 0.85rem 1.1rem;
     align-items: center;
   }
+  .list.runs .header,
+  .list.runs .row {
+    grid-template-columns: 100px 1fr 1.3fr 130px 120px 30px;
+  }
   .header {
     background: transparent;
     color: var(--muted);
@@ -91,6 +95,19 @@
   .row .score.pass { color: var(--pass); }
   .row .score.mid  { color: var(--mid); }
   .row .score.low  { color: var(--low); }
+  .row .cost {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  .row .cost .per-pass {
+    display: block;
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 400;
+    margin-top: 1px;
+  }
   .row .chev {
     text-align: right;
     color: var(--muted);
@@ -100,7 +117,8 @@
 
   @media (max-width: 720px) {
     .header { display: none; }
-    .row {
+    .row,
+    .list.runs .row {
       grid-template-columns: 1fr 90px;
       gap: 0.4rem 1rem;
     }
@@ -108,6 +126,7 @@
     .row .bench { grid-column: 1; }
     .row .model { grid-column: 1 / -1; }
     .row .score { grid-column: 2; grid-row: 1 / 3; }
+    .row .cost  { grid-column: 1 / -1; text-align: left; font-weight: 400; font-size: 0.85rem; color: var(--muted); }
     .row .chev  { display: none; }
   }
 
@@ -157,12 +176,13 @@
   </div>
 
   <h2 style="margin:1rem 0 0.5rem;font-size:1rem;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;">Runs</h2>
-  <div class="list">
+  <div class="list runs">
     <div class="header">
       <div>Date</div>
       <div>Benchmark</div>
       <div>Model</div>
       <div style="text-align:right">Score</div>
+      <div style="text-align:right">Est. cost <a href="pricing.html" style="color:var(--muted);text-decoration:none;font-size:0.7rem;">↗</a></div>
       <div></div>
     </div>
 
@@ -171,6 +191,7 @@
       <div class="bench">Terminal-Bench 2.1</div>
       <div class="model">kimi-code/kimi-2.6</div>
       <div class="score pass">53/89 · 59.6%</div>
+      <div class="cost">$28.19<span class="per-pass">$0.53 / pass</span></div>
       <div class="chev">›</div>
     </a>
 
@@ -179,6 +200,7 @@
       <div class="bench">Terminal-Bench 2.1</div>
       <div class="model">deepseek/deepseek-v4-flash@max</div>
       <div class="score mid">50/89 · 56.2%</div>
+      <div class="cost">$2.28<span class="per-pass">$0.05 / pass</span></div>
       <div class="chev">›</div>
     </a>
 
@@ -187,6 +209,7 @@
       <div class="bench">Terminal-Bench 2.1</div>
       <div class="model">minimax-token-plan/MiniMax-M3</div>
       <div class="score mid">46/89 · 51.7%</div>
+      <div class="cost">$9.39<span class="per-pass">$0.20 / pass</span></div>
       <div class="chev">›</div>
     </a>
 
@@ -195,6 +218,7 @@
       <div class="bench">Terminal-Bench 2.1</div>
       <div class="model">minimax-token-plan/MiniMax-M3</div>
       <div class="score mid">42/89 · 47.2%</div>
+      <div class="cost">$5.65<span class="per-pass">$0.13 / pass</span></div>
       <div class="chev">›</div>
     </a>
 
@@ -203,6 +227,7 @@
       <div class="bench">Terminal-Bench 2.0</div>
       <div class="model">deepseek/deepseek-v4-flash@max</div>
       <div class="score pass">54/89 · 60.7%</div>
+      <div class="cost">$1.34<span class="per-pass">$0.02 / pass</span></div>
       <div class="chev">›</div>
     </a>
   </div>
