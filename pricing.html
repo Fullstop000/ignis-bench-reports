@@ -105,12 +105,13 @@
     cost math is reproducible.
   </p>
 
-  <h2>Per 1M tokens</h2>
+  <h2>Prices &mdash; per 1M tokens</h2>
   <p class="legend">
-    Prices are denominated in <strong>CNY</strong> (the canonical currency on each
-    provider's API pricing page). The USD column applies a fixed
-    <strong>≈1 USD = 7.10 CNY</strong> rate &mdash; the same conversion the
-    compare reports use. <em>Input miss</em> is uncached input, <em>cache hit</em>
+    All prices below are quoted <strong>per 1,000,000 tokens</strong> &mdash; the
+    base unit used by every provider's published rate sheet. Prices are in
+    <strong>CNY</strong> with a <strong>USD</strong> equivalent at
+    <strong>≈1 USD = 7.10 CNY</strong> (the same conversion the compare
+    reports apply). <em>Input miss</em> is uncached input, <em>cached input</em>
     is input matched by the provider's prompt cache, <em>output</em> is generated
     tokens.
   </p>
@@ -119,9 +120,9 @@
       <tr>
         <th class="left">Provider</th>
         <th class="left">Model</th>
-        <th>Input miss</th>
-        <th>Cache hit</th>
-        <th>Output</th>
+        <th>Input miss / 1M</th>
+        <th>Cached input / 1M</th>
+        <th>Output / 1M</th>
         <th>Source</th>
       </tr>
     </thead>
@@ -175,8 +176,10 @@
     </li>
     <li>
       <strong>Formula.</strong>
-      <code>cost = (input − cache) × miss-price + cache × hit-price + output × out-price</code>
-      &mdash; same formula the
+      <code>cost = (input − cache) × miss + cache × hit + output × out</code>,
+      where each <em>token</em>-count is multiplied by the matching
+      <em>per-1M-token</em> price (so the product is divided by 1M).
+      Same formula the
       <a href="https://github.com/Fullstop000/ignis/blob/master/benchmarks/terminal-bench/scripts/compare_runs.py">
       compare_runs.py</a> headline uses when <code>--price-cny</code> is
       passed for a run.
