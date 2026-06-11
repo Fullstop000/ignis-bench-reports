@@ -125,13 +125,22 @@
         <td>¥21.87 &middot; $3.08</td>
         <td><a href="https://openrouter.ai/z-ai/glm-5.1">openrouter.ai/z-ai/glm-5.1</a></td>
       </tr>
+      <tr>
+        <td class="left">DeepSeek</td>
+        <td class="left"><span class="model">deepseek-v4-pro</span></td>
+        <td>¥12.35 &middot; $1.74</td>
+        <td>¥0.10 &middot; $0.0145</td>
+        <td>¥24.71 &middot; $3.48</td>
+        <td><a href="https://api-docs.deepseek.com/quick_start/pricing">api-docs.deepseek.com</a></td>
+      </tr>
     </tbody>
   </table>
 
   <ul class="notes">
     <li>kimi-2.6 is billed via a flat-fee Coding Plan in practice; rates above are the per-token equivalent.</li>
     <li>MiniMax-M3 row uses the ≤512k-context promotional rate.</li>
-    <li>glm-5.1 was run via the Ark Coding Plan (flat-fee); rates above are the per-token equivalent. Ark's <code>/api/coding/v3</code> endpoint returned no cached-input, so in practice all input billed at the miss rate.</li>
+    <li>glm-5.1 was run via the Ark Coding Plan (flat-fee); rates above are the per-token equivalent. For glm-5.1, Ark's <code>/api/coding/v3</code> endpoint returned no cached-input (all input billed at the miss rate); deepseek-v4-pro on the same endpoint <em>does</em> cache (~76%).</li>
+    <li>deepseek-v4-pro shown at standard rates — the 75%-off promo ended 2026-05-31.</li>
   </ul>
 </main>
 </body>
